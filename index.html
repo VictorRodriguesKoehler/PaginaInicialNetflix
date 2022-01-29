@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script>
+function onOver(elemento){
+    elemento.style.backgroundColor = "#f40612"
+}
+function onOut(elemento){
+    elemento.style.backgroundColor = "#e50914"
+}
+    </script>
+    <link rel="shortcut icon" href="./img/favicon-16x16.png"/>
+    <title>Netflix Brasil - assistir a séries online, assistir a filmes online</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./img/netflix-logo-5.png" width="200px" height="50px" draggable="false">
+        <select name="languages" id="lang">
+            <option value="ptbr">Português</option>
+            <option value="en">English</option>
+        </select>
+        <a href="#">Entrar</a>
+    </header>
+    <main class="main">
+        <div class="mainChild">
+        <h1>Filmes, séries e muito mais. <br> Sem limites.</h1>
+        <br>
+        <br>
+        <span>Assista onde quiser. Cancele quando quiser.</span>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+        <form class="form-cta">
+            <input type="text" placeholder="Email"/>
+            <button onmouseover="onOver(this)"
+                    onmouseout="onOut(this)">Vamos lá ></button>
+        </form>
+        </div>
+        <div class="gradient"></div>
+    </main>
+    <section class="section">
+        <div class="container">
+            <div class="grid">
+                <div>
+            <h1>Aproveite na TV.</h1>
+            <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+            </div>
+            <div class="imgtv">
+            <img src="./img/tv.png">
+            <video class="videotv" autoplay playsinline muted loop >
+                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">"
+            </video>
+            </div>
+            </div>
+        </div>
+
+    </section>
+    <section class=" down section">
+        <div class="container">
+            <div class="grid">
+                <div>
+            <h1>Baixe séries para assistir offline.</h1>
+            <p>Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+            </div>
+            <div class="imgtv">
+            <img src="./img/mobile-0819.jpg">
+            <div class="stranger">
+                <div><img src="./img/boxshot.png" width="70px" height="100px"></div>
+                <div class="text">
+                <div><p class="pr">Stranger Things <br><a href="#">Download em andamento...<img id="circ" src="./img/gif.gif"></a></p></div>
+
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="device section">
+        <div class="container">
+            <div class="grid">
+                <div>
+            <h1>Assista quando quiser.</h1>
+            <p>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</p>
+            </div>
+            <div class="imgtv">
+            <img src="./img/device-pile.png">
+            <video class="videotv" autoplay playsinline muted loop >
+                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" type="video/mp4">"
+            </video>
+            </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class=" down section">
+        <div class="container">
+            <div class="grid">
+                <div>
+            <h1>Crie perfis para crianças.</h1>
+            <p>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
+            </div>
+            <div class="imgtv">
+            <img src="./img/KIDS.png">
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <form class="form-cta">
+            <input type="text" placeholder="Email"/>
+            <button onmouseover="onOver(this)"
+                    onmouseout="onOut(this)">Vamos lá ></button>
+        </form>
+        <p>Copyright © Netflix Brasil 2022. Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

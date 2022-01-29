@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+display: block;
+max-width: 100%;
+} 
+
+body{
+    font-family: sans-serif;
+    color: white;
+}
+
+.header{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1770px;
+    top: 40px;
+    left: 80px;
+   
+}
+
+#lang{
+    height: 55px;
+    width: 9rem;
+    background-color: transparent;
+    color: white;
+    font-size: 23px;
+    border-radius: 5px;
+    border-color: white;
+    padding: 3px 3px;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: -2px;
+}
+
+#lang option{
+    background-color: gray;
+}
+
+.header a{
+    display: inline-block;
+    background: #e50914;
+    color: white;
+    align-self: flex-start;
+    padding: 11px 26px;
+    border-radius: 5px;
+    font-size: 23px;
+    text-decoration: none;
+
+}
+
+.main{
+    height: 900px;
+    background-image: url("./img/bg.jpg");
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 4rem;
+    box-sizing: border-box;
+}
+
+.mainChild{
+    z-index: 20;
+    text-align: center;
+}
+
+.main h1{
+    font-size: 70px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.main span{
+    font-size: 40px;
+}
+
+.main p{
+    font-size: 30px;
+}
+
+.gradient{
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,.8) 0,
+        rgba(0,0,0,0) 40%,
+        rgba(0,0,0,0) 75%,
+        rgba(0,0,0,.8) 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.form-cta{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 680px 300px;
+    margin-top: 30px;
+    
+}
+
+.form-cta input{
+    padding: 30px 40px;
+    font-size: 25px;
+    font-family: sans-serif;
+    border-radius: 3px;
+}
+
+.form-cta button{
+    background-color:#e50914;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-cta button ::after{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 19px;
+    background: url();
+}
+
+.section{
+    background: black;
+    padding: 4rem 0;
+    border-top: 8px solid #222;
+}
+
+.section h1{
+    font-size: 56px;
+    margin-bottom: 16px;
+}
+
+.section p{
+    font-size: 26px;
+}
+
+.container{
+    max-width: 1130px ;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1.1fr 1.1fr;
+    align-items: center;
+}
+
+.imgtv{
+position: relative;
+}
+
+.imgtv img{
+    position: relative;
+    z-index: 1;
+}
+
+.videotv{
+    position: absolute;
+    width: 400px;
+    top: 80px;
+    left: 70px;
+}
+
+.down .grid > div:first-child{
+    order: 2;
+}
+
+.stranger{
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    background: #000;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 75%;
+    min-width: 15rem;
+    border: 2px solid rgba(255, 255,255,.25);
+    box-shadow: 0 0 2rem 0 #000;
+    border-radius: 0.75em;
+    position: flex;
+    margin-left: 300px;
+    margin-right: 0;
+    margin-bottom: 100px;
+    margin-top: -1px;
+    padding: 20px;
+
+}
+
+#circ{
+    width: 3em;
+    height: 3em;
+    margin-left: 350px; 
+    display: block;
+    margin-top: -60px;
+}
+
+.pr{
+    margin-left: 20px;
+}
+
+.pr a {
+    text-decoration: none;
+    color: blue;
+    
+}
+
+.device .videotv{
+    width: 340px;
+    top: 45px;
+    left: 100px;
+}
+
+.footer .form-cta{
+    margin-top: 0;
+}
+
+.footer{
+    padding: 4rem 0 2rem 0;
+    background: black;
+    text-align: center;
+    border-top: 0px solid #222;
+}
+
+.footer p{
+    margin-top: 2rem;
+    color: #757575;
+    font-size: 13px;
+}
